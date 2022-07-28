@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "9d67ae3e-0f92-4441-a9af-2eeed29b04bc",
+		"name": "broadcom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"users\": [\r\n    {\r\n      \"id\": \"789\",\r\n      \"name\": \"Dilip\",\r\n      \"age\": 28,\r\n      \"address1\": \"avalon co\",\r\n      \"address2\": \"suit 201\"      \r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/modify",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"789\",\r\n    \"name\": \"Dilip\",\r\n    \"age\": 31,\r\n    \"address1\": \"avalon co\",\r\n    \"address2\": \"suit 501\"      \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/modify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"modify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/remove",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"789\",\r\n    \"name\": \"Dilip\",\r\n    \"age\": 31,\r\n    \"address1\": \"avalon co\",\r\n    \"address2\": \"suit 501\"      \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/remove",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"remove"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
